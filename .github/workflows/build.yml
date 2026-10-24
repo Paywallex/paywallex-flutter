@@ -1,0 +1,13 @@
+# Analyse le kit Flutter et vérifie qu'il est publiable sur pub.dev. Signé : Superagent.
+name: build
+on: [push, pull_request]
+jobs:
+  flutter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with: { channel: stable }
+      - run: flutter pub get
+      - run: flutter analyze
+      - run: dart pub publish --dry-run

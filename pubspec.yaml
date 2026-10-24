@@ -1,0 +1,14 @@
+name: paywallex
+description: Kit officiel Paywallex pour Flutter. Paiement et abonnement par le compte Paywallex ou Mobile Money, retour dans l'app, confirmation serveur.
+version: 1.0.0
+homepage: https://paywallex.app/developpeurs
+repository: https://github.com/Paywallex/paywallex-flutter
+topics: [payments, mobile-money, paywallex]
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+  flutter: ">=3.19.0"
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.0
+  flutter_web_auth_2: ^4.0.0
