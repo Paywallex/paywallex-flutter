@@ -21,7 +21,7 @@ Créez le client, puis lancez le paiement :
 ```dart
 import 'package:paywallex/paywallex.dart';
 
-final paywallex = Paywallex(appKey: 'pxa_test_…', baseUrl: 'https://api.paywallx.xyz', returnUrl: 'monapp://paiement');
+final paywallex = Paywallex(appKey: 'pxa_test_…', baseUrl: 'https://api.paywallex.app', returnUrl: 'monapp://paiement');
 
 final result = await paywallex.pay(amount: '5000', reference: 'CMD-1042', title: 'Commande 1042');
 if (result.outcome == PaywallexOutcome.paid) { /* afficher « Merci » */ }
